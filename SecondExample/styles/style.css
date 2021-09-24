@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    display: block;
+    margin: 50px auto 50px;
+    background-color: #fff;
+    border: 5px solid cadetblue;
+    padding: 20px 50px;
+    font-size: 22px;
+}
+
+div {
+    margin: 10px;
+    font-size: 26px;
+    text-align: center;
+}
