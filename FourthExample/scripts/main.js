@@ -2,6 +2,7 @@ const addBtn = document.querySelector('.add');
 const cleanBtn = document.querySelector('.clean');
 const showAdviceBtn = document.querySelector('.showAdvice');
 const showOptionsBtn = document.querySelector('.showOptions');
+const h1 = document.querySelector('h1');
 
 const options = ["value 1", "value 2"];
 
@@ -17,11 +18,11 @@ const addOption = (e) => {
 const cleanInput = (e) => {
     e.preventDefault();
     options.length = 0;
+    h1.textContent = "";
 }
 
 const showAdvice = () => {
     const indexAdvice = Math.floor(Math.random() * options.length);
-    const h1 = document.querySelector('h1');
     h1.textContent = options[indexAdvice];
 }
 
